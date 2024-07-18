@@ -1,14 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import Card from "react-bootstrap/Card";
 import "./Men.css";
-function Men() {
+import { reducer } from "../../reducer";
+import Button from "react-bootstrap/esm/Button";
+function Men({dispatch}) {
   const [products, setProducts] = useState([]);
-
+  
+const[cart,setCart]=useState(0)
   useEffect(() => {
     fetch("/sampleDB.json")
       .then((response) => response.json())
       .then((data) => setProducts(data.products));
   }, []);
+
+function handleAddToCart(){
+  dispatch({type:'add_to_cart',cart})
+  setCart(cart+1)
+}
 
   return (
     <div className="women-wrapper">
@@ -26,7 +34,7 @@ function Men() {
             <Card.Title className="product-title">{product.title}</Card.Title>
           </Card.Body>
           <Card.Body className="card-links">
-            <Card.Link href="/order">Add-to-Cart</Card.Link>
+            <Button onClick={handleAddToCart}>Add-to-Cart</Button>
             <Card.Link href="/detail">See detail</Card.Link>
           </Card.Body>
         </Card>
