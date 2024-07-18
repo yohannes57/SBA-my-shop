@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import Profile from "./Profile.jsx";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -43,3 +42,11 @@ function Header() {
 }
 
 export default Header;
+/*
+if(haystack.length<needle.length)return -1
+for(let i=0;i<=haystack.length-needle.length;i++){
+if(haystack.substring(i,i+needle.length)===needle
+return i;
+)}
+
+*/
