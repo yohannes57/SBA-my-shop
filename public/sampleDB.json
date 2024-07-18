@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "women dress|kemis",
+      "image": "https://i.pinimg.com/originals/21/41/3e/21413e39c07d57bc0c8cfd9afa5183e5.jpg",
+      "category": "Men",
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/women"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Men's T-shirt",
+      "image": "https://i.pinimg.com/736x/34/89/ef/3489efafb746c7c600e5aec7d077732c.jpg",
+      "category": "Women",
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/men"
+      }
+    },
+    {
+      "id": 3,
+      "title": "women's dress|shifon",
+      "image": "https://i.pinimg.com/736x/42/2b/cb/422bcbb44f339a26d152ba57a9373122.jpg",
+      "category": "Men",
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/shifon"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Organic hanny",
+      "image": "https://www.bee514.com/wp-content/uploads/2017/08/beekeeping_products.jpg",
+      "category": "Women",
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/items"
+      }
+    }
+  ]
+}
