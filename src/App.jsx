@@ -11,7 +11,7 @@ function App() {
 
   return (
     <StateProvider reducer={reducer} initialState={initialState}>
-       <Header />
+      <Header />
       <Routing />
       <Footer />
     </StateProvider>

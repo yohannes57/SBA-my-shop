@@ -3,11 +3,11 @@ import Card from "react-bootstrap/Card";
 import "./Men.css";
 import Button from "react-bootstrap/esm/Button";
 import { useStateFromContext } from "../../stateProvider/StateProvider";
-function Men({dispatch}) {
+function Men() {
   const [products, setProducts] = useState([]);
-  const [{basket,user},dispatch]=useStateFromContext()
+  const [{cart,user},dispatch]=useStateFromContext()
 
-const[cart,setCart]=useState(0)
+// const[cart,setCart]=useState(0)
   useEffect(() => {
     fetch("/sampleDB.json")
       .then((response) => response.json())
@@ -17,8 +17,7 @@ const[cart,setCart]=useState(0)
 function handleAddToCart(){
   dispatch({
     type:'add_to_cart',
-  cart:basket})
-  setCart(cart+1)
+    basket})
 }
 
   return (

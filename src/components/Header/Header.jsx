@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { useStateFromContext } from "../../stateProvider/StateProvider";
 
-function Header({state}) {
+function Header() {
   // const [user,setUser]=useState('yonni');
   const {user,cart}=useStateFromContext;
   return (
@@ -33,8 +33,8 @@ function Header({state}) {
             </Nav>
             <Nav className="profiles">
               <Nav.Link href="/signup">singUp</Nav.Link>
-              <Nav.Link href="/user">{user}</Nav.Link>
-              <Nav.Link href="/cart">cart:{cart}</Nav.Link>
+              <Nav.Link href="/user">"{user}"</Nav.Link>
+              <Nav.Link href="/cart">cart:"{cart}"</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
