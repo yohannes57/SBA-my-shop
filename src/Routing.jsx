@@ -8,16 +8,17 @@ import Men from "./components/Men/Men";
 import Products from "./components/products/Products";
 import DetailProduct from "./components/products/DetailProduct";
 import { reducer } from "./reducer";
-let initialState={cart:0}
+
+
+//---------------------------------------j
 function Routing() {
-  const[state,dispatch]=useReducer(reducer,initialState);
+
   return (
     <Routes>
       <Route
         path="/"
         element={
           <>
-          <Header />
             <Home />
             <Banner />
           </>
@@ -27,7 +28,6 @@ function Routing() {
         path="/home"
         element={
           <>
-           <Header />
             <Home />
             <Banner />
           </>
@@ -37,7 +37,6 @@ function Routing() {
         path="/women"
         element={
           <>
-           <Header />
             <Home />
             <Women />
           </>
@@ -47,9 +46,8 @@ function Routing() {
         path="/men"
         element={
           <>
-           <Header />
             <Home />
-            <Men dispatch={dispatch}/>
+            <Men/>
           </>
         }
       />
@@ -57,7 +55,6 @@ function Routing() {
         path="/products"
         element={
           <>
-            <Header />
             <Products />
           </>
         }

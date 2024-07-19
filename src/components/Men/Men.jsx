@@ -1,11 +1,12 @@
 import React, { useEffect, useReducer, useState } from "react";
 import Card from "react-bootstrap/Card";
 import "./Men.css";
-import { reducer } from "../../reducer";
 import Button from "react-bootstrap/esm/Button";
+import { useStateFromContext } from "../../stateProvider/StateProvider";
 function Men({dispatch}) {
   const [products, setProducts] = useState([]);
-  
+  const [{basket,user},dispatch]=useStateFromContext()
+
 const[cart,setCart]=useState(0)
   useEffect(() => {
     fetch("/sampleDB.json")
@@ -14,7 +15,9 @@ const[cart,setCart]=useState(0)
   }, []);
 
 function handleAddToCart(){
-  dispatch({type:'add_to_cart',cart})
+  dispatch({
+    type:'add_to_cart',
+  cart:basket})
   setCart(cart+1)
 }
 

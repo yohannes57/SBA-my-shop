@@ -1,8 +1,14 @@
-import { Children } from "react";
-import { createContext } from "react";
+import { useReducer,useContext,createContext } from "react";
 
 export const stateContext = createContext();
 
-export default function StateProvider(Children,intailValue) {
-  <StateProvider.Provider value={intailValue}>{Children}</StateProvider.Provider>;
+export default function StateProvider({reducer,initialState,Children}) {
+  return(
+<stateContext.Provider value={useReducer(reducer,initialState)}>
+  {Children}
+  </stateContext.Provider>
+  )
+  
 }
+
+export const useStateFromContext=()=>useContext(stateContext)

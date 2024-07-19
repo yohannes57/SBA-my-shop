@@ -4,11 +4,11 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { stateContext } from "../../stateProvider/StateProvider";
-import { reducer } from "../../reducer";
+import { useStateFromContext } from "../../stateProvider/StateProvider";
+
 function Header({state}) {
-  const [user,setUser]=useState('yonni');
-  // const {cart,dispatch}=useReducer(reducer,0)
+  // const [user,setUser]=useState('yonni');
+  const {user,cart}=useStateFromContext;
   return (
     <div className="header">
       <Navbar collapseOnSelect expand="sm" className="bg-body-tertiary">
@@ -34,7 +34,7 @@ function Header({state}) {
             <Nav className="profiles">
               <Nav.Link href="/signup">singUp</Nav.Link>
               <Nav.Link href="/user">{user}</Nav.Link>
-              <Nav.Link href="/cart">cart:{state.cart}</Nav.Link>
+              <Nav.Link href="/cart">cart:{cart}</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

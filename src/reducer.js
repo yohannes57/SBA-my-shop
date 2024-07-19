@@ -1,4 +1,8 @@
 import React from "react";
+export const initialState = {
+  cart: 0,
+  user: null,
+};
 export function reducer(state, action) {
   switch (action.type) {
     case "add_to_cart": {
