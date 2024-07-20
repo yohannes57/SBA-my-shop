@@ -1,12 +1,12 @@
 import React from "react";
 export const initialState = {
-  cart: 0,
-  user: null,
+  cart: [],
+  user: "jony",
 };
 export function reducer(state, action) {
   switch (action.type) {
     case "add_to_cart": {
-      return {...state,cart:state.cart+1};
+      return { ...state, cart: [...state.cart, action.cart] };
     }
     case "remove_from_cart": {
       return "";

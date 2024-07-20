@@ -1,8 +1,29 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# E-commerce My-shop
 
-Currently, two official plugins are available:
+This is a simple e-commerce website built with React for selling clothes for men and women, including chiffon, and other products like Honey.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+- **React**: For building the user interface
+- **React Bootstrap**: For UI components and styling
+- **Bootstrap**: For additional styling
+- **useContext and useReducer**: For state management
+- **React Router**: For navigation and routing
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/yohannes57/SBA-my-shop.git
+   ```

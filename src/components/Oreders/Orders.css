@@ -1,0 +1,38 @@
+.container-orders {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+.row-orders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.col-6-orders {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.no-orders {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5em;
+  color: #999;
+}

@@ -1,0 +1,81 @@
+{
+    "products":[
+         {
+      "id": 1,
+      "title": "Men's T-shirt",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.c0qyUYh6rTvITZG9YmjdvgAAAA&pid=Api&P=0&h=180",
+      "category": "men",
+      "price":45,
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/men"
+      }
+    },
+     {
+      "id": 2,
+      "title": "Men's T-shirt",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.dsJBwcsRsYdbC96sNLrS_wHaF6&pid=Api&P=0&h=180",
+      "category": "men",
+      "price":65,
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/men"
+      }
+    },
+     {
+      "id": 3,
+      "title": "Men's T-shirt",
+      "image": "https://i.etsystatic.com/36511693/r/il/2c994c/4237679972/il_fullxfull.4237679972_ly8y.jpg",
+      "category": "men",
+      "price":40,
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/men"
+      }
+    },
+     {
+      "id": 4,
+      "title": "Men's T-shirt",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.w_8qx0sYHe9-U2aRSSHjIwHaHT&pid=Api&P=0&h=180",
+      "category": "men",
+      "price":85,
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/men"
+      }
+    },
+     {
+      "id": 5,
+      "title": "Men's T-shirt",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.2pijUMqUDBZA3ywLxOoW4QHaHE&pid=Api&P=0&h=180",
+      "category": "men",
+      "price":100,
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/men"
+      }
+    },
+     {
+      "id": 6,
+      "title": "Men's T-shirt",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.-vOOAJJfPSFDo0TQKPIg8gHaJH&pid=Api&P=0&h=180",
+      "category": "men",
+      "price":145,
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/men"
+      }
+    },
+     {
+      "id": 7,
+      "title": "Men's T-shirt",
+      "image": "https://i.etsystatic.com/36511693/r/il/bf28b9/4418754345/il_fullxfull.4418754345_g7iz.jpg",
+      "category": "men",
+      "price":55,
+      "links": {
+        "addToCart": "/order",
+        "seeMore": "/men"
+      }
+    }
+    ]
+}

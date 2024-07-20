@@ -7,12 +7,11 @@ import Home from "./components/Home/Home";
 import Men from "./components/Men/Men";
 import Products from "./components/products/Products";
 import DetailProduct from "./components/products/DetailProduct";
-import { reducer } from "./reducer";
-
+import Orders from "./components/Oreders/Orders";
+import Order from "./components/Oreders/Order";
 
 //---------------------------------------j
 function Routing() {
-
   return (
     <Routes>
       <Route
@@ -30,6 +29,9 @@ function Routing() {
           <>
             <Home />
             <Banner />
+            <Women />
+            <Men />
+            <Products />
           </>
         }
       />
@@ -47,7 +49,7 @@ function Routing() {
         element={
           <>
             <Home />
-            <Men/>
+            <Men />
           </>
         }
       />
@@ -68,7 +70,23 @@ function Routing() {
           </>
         }
       />
-
+      {/* orders */}
+      <Route
+        path="/orders"
+        element={
+          <>
+            <Orders />
+          </>
+        }
+      />
+      <Route
+        path="/orders/order"
+        element={
+          <>
+            <Order />
+          </>
+        }
+      />
       {/*  */}
       <Route
         path="*"

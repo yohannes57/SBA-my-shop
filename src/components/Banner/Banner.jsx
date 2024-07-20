@@ -39,7 +39,7 @@ function Banner() {
           <Card.Body>
             <Card.Title className="product-title">{product.title}</Card.Title>
             {/* <BannerProps links={product.links} /> */}
-            <Card.Link href="/product">Add-to-Cart</Card.Link>
+            {/* <Card.Link href="/product">Add-to-Cart</Card.Link> */}
             <Card.Link href={product.links.seeMore}>SeeMore</Card.Link>
           </Card.Body>
           {/* <Card.Title className="product-title">{product.title}</Card.Title> */}
