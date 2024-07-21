@@ -9,6 +9,8 @@ import Products from "./components/products/Products";
 import DetailProduct from "./components/products/DetailProduct";
 import Orders from "./components/Oreders/Orders";
 import Order from "./components/Oreders/Order";
+import Total_Price from "./components/Oreders/Total_Price";
+import Checkout from "./components/Oreders/Checkout";
 
 //---------------------------------------j
 function Routing() {
@@ -84,6 +86,15 @@ function Routing() {
         element={
           <>
             <Order />
+          </>
+        }
+      />
+      <Route
+        path="/checkout"
+        element={
+          <>
+            <Total_Price />
+            <Checkout />
           </>
         }
       />

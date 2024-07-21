@@ -3,6 +3,7 @@ import { useStateFromContext } from "../../stateProvider/StateProvider";
 import "./Orders.css";
 import { Link } from "react-router-dom";
 import Order from "./Order";
+import Total_Price from "./Total_Price";
 
 function Orders() {
   const [{ user, cart }, dispatch] = useStateFromContext();
@@ -50,6 +51,9 @@ function Orders() {
           </div>
         </div>
       ))}
+      <div className="check_out">
+        <Total_Price />
+      </div>
     </>
   );
 }
