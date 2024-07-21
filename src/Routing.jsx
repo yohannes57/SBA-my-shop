@@ -11,6 +11,8 @@ import Orders from "./components/Oreders/Orders";
 import Order from "./components/Oreders/Order";
 import Total_Price from "./components/Oreders/Total_Price";
 import Checkout from "./components/Oreders/Checkout";
+import Login from "./components/registor/Login";
+import Signup from "./components/registor/Signup";
 
 //---------------------------------------j
 function Routing() {
@@ -95,6 +97,22 @@ function Routing() {
           <>
             <Total_Price />
             <Checkout />
+          </>
+        }
+      />
+      <Route
+        path="/login"
+        element={
+          <>
+            <Login />
+          </>
+        }
+      />
+      <Route
+        path="/signup"
+        element={
+          <>
+            <Signup />
           </>
         }
       />
